@@ -14,6 +14,11 @@
 .overview{padding:18px 16px 20px;border-bottom:1px solid var(--line)}
 .overviewCard,.miniMap,.whyBox{border:1px solid var(--line);background:var(--surface);border-radius:20px;box-shadow:var(--shadow)}
 .overviewCard{padding:16px}
+.cityMapFrame{overflow:hidden;border-radius:14px;border:1px solid var(--line);background:var(--surface2)}
+.cityMapFrame iframe{display:block;width:100%;height:460px;border:0;color-scheme:light}
+.cityMapCaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-top:12px;color:var(--muted);font-size:12px}
+.cityMapCaption a{color:var(--text);font-weight:750;text-underline-offset:3px}
+@media(max-width:480px){.cityMapFrame iframe{height:360px}}
 .overviewHead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:12px}
 .overviewHead h2{font-size:19px;line-height:1.1;margin:0;letter-spacing:-.035em}
 .mapNote{color:var(--muted);font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
@@ -52,44 +57,12 @@
 <section class="overview" aria-label="전체 여행 동선 개요">
   <div class="overviewCard">
     <div class="overviewHead">
-      <div><div class="eyebrow" style="margin:0 0 5px">Route Overview</div><h2>왜 이 동선이 효율적인가</h2></div>
-      <div class="mapNote">SCHEMATIC · NOT TO SCALE</div>
+      <div><div class="eyebrow" style="margin:0 0 5px">Explore Fukuoka</div><h2>후쿠오카 여행 지도</h2></div>
     </div>
-    <svg class="routeMap" viewBox="0 0 700 400" role="img" aria-label="후쿠오카 주요 권역과 날짜별 이동 방향을 단순화한 지도">
-      <rect class="mapZone" x="18" y="18" width="664" height="364" rx="24"/>
-      <text class="mapSub" x="38" y="48">NORTH / BAY SIDE</text>
-      <text class="mapSub" x="575" y="358">EAST → AIRPORT</text>
-
-      <!-- route lines -->
-      <path class="route17" d="M470 235 C420 215 390 195 356 185 C390 207 427 226 470 235"/>
-      <path class="route18" d="M470 235 C380 175 300 135 220 145 C235 195 260 230 300 270 C275 245 255 220 245 205"/>
-      <path class="route19" d="M470 235 C440 270 425 310 405 330 C350 265 310 190 300 92"/>
-      <path class="route19 routeDash" d="M405 330 C370 300 335 280 310 265"/>
-      <path class="route20" d="M470 235 C400 200 325 170 270 165 C330 188 400 212 470 235 C545 250 600 280 650 315"/>
-
-      <!-- zones -->
-      <circle class="mapNode" cx="300" cy="92" r="10"/><text class="mapLabel" x="318" y="96">MAIZURU</text><text class="mapSub" x="318" y="109">Kieth Flack</text>
-      <circle class="mapNode" cx="220" cy="145" r="10"/><text class="mapLabel" x="120" y="140">DAIMYO / AKASAKA</text><text class="mapSub" x="120" y="154">records · shopping</text>
-      <circle class="mapNode" cx="270" cy="165" r="10"/><text class="mapLabel" x="286" y="160">TENJIN</text><text class="mapSub" x="286" y="174">main city hub</text>
-      <circle class="mapNode" cx="245" cy="205" r="10"/><text class="mapLabel" x="122" y="207">KEGO</text><text class="mapSub" x="122" y="220">bars · music</text>
-      <circle class="mapNode" cx="300" cy="270" r="10"/><text class="mapLabel" x="318" y="273">YAKUIN / IMAIZUMI</text>
-      <circle class="mapNode" cx="405" cy="330" r="10"/><text class="mapLabel" x="423" y="334">TAKASAGO</text><text class="mapSub" x="423" y="347">craft beer cluster</text>
-      <circle class="mapNode" cx="356" cy="185" r="10"/><text class="mapLabel" x="374" y="181">TENJIN-MINAMI</text><text class="mapSub" x="374" y="195">arrival night radius</text>
-      <circle class="mapHotel" cx="470" cy="235" r="11"/><text class="mapLabel" x="488" y="239">HOTEL M</text>
-      <circle class="mapNode" cx="650" cy="315" r="10"/><text class="mapLabel" text-anchor="end" x="632" y="310">FUKUOKA</text><text class="mapSub" text-anchor="end" x="632" y="323">AIRPORT</text>
-
-      <!-- day dots -->
-      <circle class="mapDot17" cx="356" cy="185" r="5"/>
-      <circle class="mapDot18" cx="220" cy="145" r="5"/>
-      <circle class="mapDot19" cx="405" cy="330" r="5"/>
-      <circle class="mapDot20" cx="650" cy="315" r="5"/>
-    </svg>
-    <div class="legend">
-      <span class="legendItem"><span class="legendLine" style="background:#b52b24"></span>17 · Arrival</span>
-      <span class="legendItem"><span class="legendLine" style="background:#396ca8"></span>18 · Records</span>
-      <span class="legendItem"><span class="legendLine" style="background:#2e7d56"></span>19 · Beer / Music</span>
-      <span class="legendItem"><span class="legendLine" style="background:#8b6f47"></span>20 · Return</span>
+    <div class="cityMapFrame">
+      <iframe title="후쿠오카 텐진 중심 여행 지도" src="https://maps.google.com/maps?q=Tenjin%2C%20Fukuoka%2C%20Japan&amp;z=14&amp;hl=ko&amp;output=embed" width="700" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
+    <div class="cityMapCaption"><span>텐진 · 다이묘 · 야쿠인 · 하루요시 주변을 둘러보세요.</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Tenjin+Fukuoka+Japan" target="_blank" rel="noopener">큰 지도 열기 ↗</a></div>
     <div class="logicGrid">
       <div class="logicItem"><strong>17 THU</strong>숙소 근처 작은 반경. 입국일 장거리 이동 없음.</div>
       <div class="logicItem"><strong>18 FRI</strong>서쪽 권역을 한 방향으로 훑고 밤까지 연결.</div>
