@@ -6,29 +6,140 @@
 <meta name="theme-color" content="#f4f0e8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 <title>FUKUOKA · SEP 17—20, 2026</title>
+<script>document.documentElement.classList.add('js');</script>
 <style>
 :root{--bg:#f4f0e8;--surface:#fffdf8;--surface2:#ece6db;--text:#171717;--muted:#6c6963;--line:#d8d0c4;--accent:#b52b24;--accentSoft:#f0d9d5;--shadow:0 10px 28px rgba(31,27,22,.07);--safeTop:env(safe-area-inset-top,0px);--safeBottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root{--bg:#101010;--surface:#171717;--surface2:#202020;--text:#f4f0e8;--muted:#aaa59c;--line:#30302e;--accent:#e06459;--accentSoft:#39201e;--shadow:none}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;line-height:1.55;letter-spacing:-.015em}.app{width:min(100%,760px);margin:auto;min-height:100vh}.hero{padding:calc(22px + var(--safeTop)) 18px 18px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}h1{margin:0;font-size:clamp(32px,9vw,54px);line-height:.95;letter-spacing:-.055em;font-weight:900}.heroMeta{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:14px;color:var(--muted);font-size:13px;font-weight:650}.heroMeta a{color:inherit}.topnote{margin-top:14px;padding:12px 13px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--muted);font-size:12px}.tabsWrap{position:sticky;top:0;z-index:20;padding-top:var(--safeTop);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:10px 12px}.tab{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:13px;min-height:46px;padding:7px 4px;cursor:pointer;font-size:12px;font-weight:800;line-height:1.15}.tab small{display:block;color:var(--muted);font-size:9px;letter-spacing:.08em;margin-top:3px}.tab.active{background:var(--text);color:var(--bg);border-color:var(--text)}.tab.active small{color:color-mix(in srgb,var(--bg) 70%,transparent)}main{padding:0 16px calc(34px + var(--safeBottom))}.day{display:none}.day.active{display:block}.dayHeader{padding:28px 0 18px}.dayKicker{color:var(--accent);font-size:12px;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.dayTitle{margin:5px 0 6px;font-size:27px;line-height:1.08;letter-spacing:-.045em}.dayDesc{margin:0;color:var(--muted);font-size:14px}.routeChip{margin-top:14px;display:inline-flex;max-width:100%;padding:9px 12px;border-radius:999px;background:var(--surface2);color:var(--muted);font-size:11px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;border:0;border-radius:15px;padding:12px 14px;text-decoration:none;font-size:14px;font-weight:850;cursor:pointer}.btn.primary{background:var(--text);color:var(--bg)}.btn.secondary{border:1px solid var(--line);background:var(--surface);color:var(--text)}.dayRoute{margin-top:16px}.timeline{margin-top:8px}.stop{position:relative;padding-left:28px;margin:0 0 8px}.stop:before{content:"";position:absolute;left:7px;top:25px;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg);z-index:2}.stop:after{content:"";position:absolute;left:10.5px;top:34px;bottom:-24px;width:1px;background:var(--line)}.stop.last:after{display:none}.time{font-size:12px;font-weight:850;color:var(--accent);margin:0 0 6px 2px;letter-spacing:.02em}.card{border:1px solid var(--line);border-radius:20px;background:var(--surface);padding:17px;box-shadow:var(--shadow)}.card h3{font-size:20px;line-height:1.15;letter-spacing:-.035em;margin:4px 0 5px}.meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}.tag{display:inline-flex;align-items:center;min-height:24px;padding:4px 8px;border-radius:999px;background:var(--surface2);color:var(--muted);font-size:10px;font-weight:850;letter-spacing:.03em;text-transform:uppercase}.tag.must,.tag.rec{color:var(--accent);background:var(--accentSoft)}.card p{margin:0 0 14px;color:var(--muted);font-size:14px}.move{margin:7px 0 14px 28px;color:var(--muted);font-size:11px;font-weight:750;letter-spacing:.04em;text-transform:uppercase}.move:before{content:"↳ ";color:var(--accent)}.choiceBlock{margin:20px 0 26px 28px;border:1px dashed var(--line);border-radius:20px;padding:14px;background:color-mix(in srgb,var(--surface) 65%,transparent)}.choiceTitle{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:10px}.options{display:grid;gap:10px}.option{border:1px solid var(--line);border-radius:16px;padding:14px;background:var(--surface)}.option.recommended{border-color:var(--accent)}.optionLabel{font-size:10px;font-weight:900;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.option.recommended .optionLabel{color:var(--accent)}.option h4{margin:4px 0 3px;font-size:18px;line-height:1.15}.option p{margin:0 0 11px;color:var(--muted);font-size:13px}.footer{padding:24px 16px calc(36px + var(--safeBottom));border-top:1px solid var(--line);color:var(--muted);font-size:11px}.todayMark{display:none;margin-left:5px;padding:2px 5px;border-radius:999px;background:var(--accent);color:#fff;font-size:9px;vertical-align:middle;letter-spacing:.05em}.day.today .todayMark{display:inline-block}@media(min-width:650px){main,.hero{padding-left:28px;padding-right:28px}.tabs{padding-left:28px;padding-right:28px}.options{grid-template-columns:1fr 1fr}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;line-height:1.55;letter-spacing:-.015em}.app{width:min(100%,760px);margin:auto;min-height:100vh}.hero{padding:calc(22px + var(--safeTop)) 18px 18px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}h1{margin:0;font-size:clamp(32px,9vw,54px);line-height:.95;letter-spacing:-.055em;font-weight:900}.heroMeta{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:14px;color:var(--muted);font-size:13px;font-weight:650}.heroMeta a{color:inherit}.topnote{margin-top:14px;padding:12px 13px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--muted);font-size:12px}.tabsWrap{position:sticky;top:0;z-index:20;padding-top:var(--safeTop);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:10px 12px}.tab{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:13px;min-height:46px;padding:7px 4px;cursor:pointer;font-size:12px;font-weight:800;line-height:1.15}.tab small{display:block;color:var(--muted);font-size:9px;letter-spacing:.08em;margin-top:3px}.tab.active{background:var(--text);color:var(--bg);border-color:var(--text)}.tab.active small{color:color-mix(in srgb,var(--bg) 70%,transparent)}main{padding:0 16px calc(34px + var(--safeBottom))}.day{display:block;scroll-margin-top:86px}.js .day{display:none}.js .day.active{display:block}.dayHeader{padding:28px 0 18px}.dayKicker{color:var(--accent);font-size:12px;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.dayTitle{margin:5px 0 6px;font-size:27px;line-height:1.08;letter-spacing:-.045em}.dayDesc{margin:0;color:var(--muted);font-size:14px}.routeChip{margin-top:14px;display:inline-flex;max-width:100%;padding:9px 12px;border-radius:999px;background:var(--surface2);color:var(--muted);font-size:11px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;border:0;border-radius:15px;padding:12px 14px;text-decoration:none;font-size:14px;font-weight:850;cursor:pointer}.btn.primary{background:var(--text);color:var(--bg)}.btn.secondary{border:1px solid var(--line);background:var(--surface);color:var(--text)}.dayRoute{margin-top:16px}.timeline{margin-top:8px}.stop{position:relative;padding-left:28px;margin:0 0 8px}.stop:before{content:"";position:absolute;left:7px;top:25px;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg);z-index:2}.stop:after{content:"";position:absolute;left:10.5px;top:34px;bottom:-24px;width:1px;background:var(--line)}.stop.last:after{display:none}.time{font-size:12px;font-weight:850;color:var(--accent);margin:0 0 6px 2px;letter-spacing:.02em}.card{border:1px solid var(--line);border-radius:20px;background:var(--surface);padding:17px;box-shadow:var(--shadow)}.card h3{font-size:20px;line-height:1.15;letter-spacing:-.035em;margin:4px 0 5px}.meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}.tag{display:inline-flex;align-items:center;min-height:24px;padding:4px 8px;border-radius:999px;background:var(--surface2);color:var(--muted);font-size:10px;font-weight:850;letter-spacing:.03em;text-transform:uppercase}.tag.must,.tag.rec{color:var(--accent);background:var(--accentSoft)}.card p{margin:0 0 14px;color:var(--muted);font-size:14px}.move{margin:7px 0 14px 28px;color:var(--muted);font-size:11px;font-weight:750;letter-spacing:.04em;text-transform:uppercase}.move:before{content:"↳ ";color:var(--accent)}.choiceBlock{margin:20px 0 26px 28px;border:1px dashed var(--line);border-radius:20px;padding:14px;background:color-mix(in srgb,var(--surface) 65%,transparent)}.choiceTitle{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:10px}.options{display:grid;gap:10px}.option{border:1px solid var(--line);border-radius:16px;padding:14px;background:var(--surface)}.option.recommended{border-color:var(--accent)}.optionLabel{font-size:10px;font-weight:900;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.option.recommended .optionLabel{color:var(--accent)}.option h4{margin:4px 0 3px;font-size:18px;line-height:1.15}.option p{margin:0 0 11px;color:var(--muted);font-size:13px}.footer{padding:24px 16px calc(36px + var(--safeBottom));border-top:1px solid var(--line);color:var(--muted);font-size:11px}.todayMark{display:none;margin-left:5px;padding:2px 5px;border-radius:999px;background:var(--accent);color:#fff;font-size:9px;vertical-align:middle;letter-spacing:.05em}.day.today .todayMark{display:inline-block}
+.overview{padding:18px 16px 20px;border-bottom:1px solid var(--line)}
+.overviewCard,.miniMap,.whyBox{border:1px solid var(--line);background:var(--surface);border-radius:20px;box-shadow:var(--shadow)}
+.overviewCard{padding:16px}
+.overviewHead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:12px}
+.overviewHead h2{font-size:19px;line-height:1.1;margin:0;letter-spacing:-.035em}
+.mapNote{color:var(--muted);font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.routeMap{width:100%;height:auto;display:block}
+.routeMap text{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif}
+.mapZone{fill:var(--surface2);stroke:var(--line);stroke-width:1}
+.mapNode{fill:var(--surface);stroke:var(--text);stroke-width:1.5}
+.mapHotel{fill:var(--text);stroke:var(--text)}
+.mapLabel{fill:var(--text);font-size:11px;font-weight:800}
+.mapSub{fill:var(--muted);font-size:8.5px;font-weight:650}
+.route17{fill:none;stroke:#b52b24;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.route18{fill:none;stroke:#396ca8;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.route19{fill:none;stroke:#2e7d56;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.route20{fill:none;stroke:#8b6f47;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.routeDash{stroke-dasharray:7 7}
+.mapDot17{fill:#b52b24}.mapDot18{fill:#396ca8}.mapDot19{fill:#2e7d56}.mapDot20{fill:#8b6f47}
+.legend{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:12px;color:var(--muted);font-size:10px;font-weight:800}
+.legendItem{display:flex;align-items:center;gap:5px}.legendLine{width:18px;height:3px;border-radius:999px}
+.logicGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.logicItem{padding:10px 11px;border-radius:13px;background:var(--surface2);font-size:11px;color:var(--muted)}
+.logicItem strong{display:block;color:var(--text);font-size:11px;margin-bottom:2px}
+.visualBlock{margin:14px 0 2px}
+.miniMap{padding:12px}
+.whyBox{margin-top:9px;padding:12px 13px;color:var(--muted);font-size:12px}
+.whyBox strong{color:var(--text)}
+.noJsHint{display:block;margin:10px 12px 0;padding:9px 11px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:11px}
+.js .noJsHint{display:none}
+@media(min-width:650px){.overview{padding-left:28px;padding-right:28px}.logicGrid{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:650px){main,.hero{padding-left:28px;padding-right:28px}.tabs{padding-left:28px;padding-right:28px}.options{grid-template-columns:1fr 1fr}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <div class="app">
-<header class="hero"><div class="eyebrow">Trip Guide · v1.0</div><h1>FUKUOKA</h1><div class="heroMeta"><span>SEP 17—20 · 2026</span><span>3 NIGHTS</span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=HOTEL+M+Fukuoka">HOTEL M ↗</a></div><div class="topnote">음악 · 레코드 · 크래프트비어 중심. 시간은 여행용 가이드이며, 방문 직전 <strong>MAP</strong> 버튼에서 당일 영업 여부를 다시 확인.</div></header>
-<div class="tabsWrap"><nav class="tabs"><button class="tab" data-day="17">17<small>THU</small></button><button class="tab" data-day="18">18<small>FRI</small></button><button class="tab" data-day="19">19<small>SAT</small></button><button class="tab" data-day="20">20<small>SUN</small></button></nav></div>
+<header class="hero"><div class="eyebrow">Trip Guide · v1.1</div><h1>FUKUOKA</h1><div class="heroMeta"><span>SEP 17—20 · 2026</span><span>3 NIGHTS</span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=HOTEL+M+Fukuoka">HOTEL M ↗</a></div><div class="topnote">음악 · 레코드 · 크래프트비어 중심. 시간은 여행용 가이드이며, 방문 직전 <strong>MAP</strong> 버튼에서 당일 영업 여부를 다시 확인.</div></header>
+
+<section class="overview" aria-label="전체 여행 동선 개요">
+  <div class="overviewCard">
+    <div class="overviewHead">
+      <div><div class="eyebrow" style="margin:0 0 5px">Route Overview</div><h2>왜 이 동선이 효율적인가</h2></div>
+      <div class="mapNote">SCHEMATIC · NOT TO SCALE</div>
+    </div>
+    <svg class="routeMap" viewBox="0 0 700 400" role="img" aria-label="후쿠오카 주요 권역과 날짜별 이동 방향을 단순화한 지도">
+      <rect class="mapZone" x="18" y="18" width="664" height="364" rx="24"/>
+      <text class="mapSub" x="38" y="48">NORTH / BAY SIDE</text>
+      <text class="mapSub" x="575" y="358">EAST → AIRPORT</text>
+
+      <!-- route lines -->
+      <path class="route17" d="M470 235 C420 215 390 195 356 185 C390 207 427 226 470 235"/>
+      <path class="route18" d="M470 235 C380 175 300 135 220 145 C235 195 260 230 300 270 C275 245 255 220 245 205"/>
+      <path class="route19" d="M470 235 C440 270 425 310 405 330 C350 265 310 190 300 92"/>
+      <path class="route19 routeDash" d="M405 330 C370 300 335 280 310 265"/>
+      <path class="route20" d="M470 235 C400 200 325 170 270 165 C330 188 400 212 470 235 C545 250 600 280 650 315"/>
+
+      <!-- zones -->
+      <circle class="mapNode" cx="300" cy="92" r="10"/><text class="mapLabel" x="318" y="96">MAIZURU</text><text class="mapSub" x="318" y="109">Kieth Flack</text>
+      <circle class="mapNode" cx="220" cy="145" r="10"/><text class="mapLabel" x="120" y="140">DAIMYO / AKASAKA</text><text class="mapSub" x="120" y="154">records · shopping</text>
+      <circle class="mapNode" cx="270" cy="165" r="10"/><text class="mapLabel" x="286" y="160">TENJIN</text><text class="mapSub" x="286" y="174">main city hub</text>
+      <circle class="mapNode" cx="245" cy="205" r="10"/><text class="mapLabel" x="122" y="207">KEGO</text><text class="mapSub" x="122" y="220">bars · music</text>
+      <circle class="mapNode" cx="300" cy="270" r="10"/><text class="mapLabel" x="318" y="273">YAKUIN / IMAIZUMI</text>
+      <circle class="mapNode" cx="405" cy="330" r="10"/><text class="mapLabel" x="423" y="334">TAKASAGO</text><text class="mapSub" x="423" y="347">craft beer cluster</text>
+      <circle class="mapNode" cx="356" cy="185" r="10"/><text class="mapLabel" x="374" y="181">TENJIN-MINAMI</text><text class="mapSub" x="374" y="195">arrival night radius</text>
+      <circle class="mapHotel" cx="470" cy="235" r="11"/><text class="mapLabel" x="488" y="239">HOTEL M</text>
+      <circle class="mapNode" cx="650" cy="315" r="10"/><text class="mapLabel" text-anchor="end" x="632" y="310">FUKUOKA</text><text class="mapSub" text-anchor="end" x="632" y="323">AIRPORT</text>
+
+      <!-- day dots -->
+      <circle class="mapDot17" cx="356" cy="185" r="5"/>
+      <circle class="mapDot18" cx="220" cy="145" r="5"/>
+      <circle class="mapDot19" cx="405" cy="330" r="5"/>
+      <circle class="mapDot20" cx="650" cy="315" r="5"/>
+    </svg>
+    <div class="legend">
+      <span class="legendItem"><span class="legendLine" style="background:#b52b24"></span>17 · Arrival</span>
+      <span class="legendItem"><span class="legendLine" style="background:#396ca8"></span>18 · Records</span>
+      <span class="legendItem"><span class="legendLine" style="background:#2e7d56"></span>19 · Beer / Music</span>
+      <span class="legendItem"><span class="legendLine" style="background:#8b6f47"></span>20 · Return</span>
+    </div>
+    <div class="logicGrid">
+      <div class="logicItem"><strong>17 THU</strong>숙소 근처 작은 반경. 입국일 장거리 이동 없음.</div>
+      <div class="logicItem"><strong>18 FRI</strong>서쪽 권역을 한 방향으로 훑고 밤까지 연결.</div>
+      <div class="logicItem"><strong>19 SAT</strong>다카사고 맥주 2곳을 묶고 심야만 분기.</div>
+      <div class="logicItem"><strong>20 SUN</strong>회수 일정 후 숙소 → 공항으로 단방향 이탈.</div>
+    </div>
+  </div>
+</section>
+
+<div class="tabsWrap"><nav class="tabs" aria-label="여행 날짜">
+<a class="tab" href="#day-17" data-day="17">17<small>THU</small></a>
+<a class="tab" href="#day-18" data-day="18">18<small>FRI</small></a>
+<a class="tab" href="#day-19" data-day="19">19<small>SAT</small></a>
+<a class="tab" href="#day-20" data-day="20">20<small>SUN</small></a>
+</nav><div class="noJsHint">날짜 탭이 전환되지 않는 뷰어에서는 아래로 스크롤하면 4일 일정이 모두 표시됩니다. 웹 배포본에서는 탭이 정상 작동합니다.</div></div>
 <main>
-<section class="day" data-day="17"><div class="dayHeader"><div class="dayKicker">Sep 17 · Thu <span class="todayMark">TODAY</span></div><h2 class="dayTitle">ARRIVAL / EASY NIGHT</h2><p class="dayDesc">도착 첫날. 숙소 기준 가까운 권역에서 라멘 → 레코드 → 바 정도로 가볍게.</p><div class="routeChip">HOTEL M → TENJIN MINAMI → HARUYOSHI → HOTEL M</div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=HOTEL+M+Fukuoka&waypoints=Menya+Kanetora+Tenjin%7CRecord+Shop+BAGISM+Fukuoka&travelmode=walking">OPEN DAY ROUTE ↗</a></div>
+<section class="day" id="day-17" data-day="17"><div class="dayHeader"><div class="dayKicker">Sep 17 · Thu <span class="todayMark">TODAY</span></div><h2 class="dayTitle">ARRIVAL / EASY NIGHT</h2><p class="dayDesc">도착 첫날. 숙소 기준 가까운 권역에서 라멘 → 레코드 → 바 정도로 가볍게.</p><div class="routeChip">HOTEL M → TENJIN MINAMI → HARUYOSHI → HOTEL M</div>
+<div class="visualBlock"><div class="miniMap">
+<svg class="routeMap" viewBox="0 0 620 170" role="img" aria-label="17일 루트 미니맵">
+<path class="route17" d="M75 86 L215 86 L355 86 L500 86"/>
+<circle class="mapHotel" cx="75" cy="86" r="10"/><text class="mapLabel" x="75" y="60" text-anchor="middle">HOTEL M</text>
+<circle class="mapDot17" cx="215" cy="86" r="8"/><text class="mapLabel" x="215" y="60" text-anchor="middle">KANETORA</text>
+<circle class="mapDot17" cx="355" cy="86" r="8"/><text class="mapLabel" x="355" y="60" text-anchor="middle">BAGISM</text>
+<circle class="mapDot17" cx="500" cy="86" r="8"/><text class="mapLabel" x="500" y="58" text-anchor="middle">BEERKICHI</text><text class="mapSub" x="500" y="110" text-anchor="middle">or WILL's</text>
+<text class="mapSub" x="286" y="145" text-anchor="middle">compact arrival-night radius · mostly walkable</text>
+</svg></div>
+<div class="whyBox"><strong>효율 포인트</strong> · 첫날은 숙소–텐진미나미–하루요시의 작은 반경만 사용. 비행 후 먼 권역으로 이동하지 않는다.</div></div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=HOTEL+M+Fukuoka&waypoints=Menya+Kanetora+Tenjin%7CRecord+Shop+BAGISM+Fukuoka&travelmode=walking">OPEN DAY ROUTE ↗</a></div>
 <div class="timeline">
 <div class="stop"><div class="time">AFTER CHECK-IN</div><div class="card"><div class="meta"><span class="tag">Base</span></div><h3>HOTEL M</h3><p>체크인 후 휴식. 첫날은 숙소에서 먼 지역을 억지로 넣지 않는다.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=HOTEL+M+Fukuoka">MAP ↗</a></div></div>
 <div class="move">Walk / Tenjin-Minami</div>
 <div class="stop"><div class="time">AROUND 17:00</div><div class="card"><div class="meta"><span class="tag">Dinner</span><span class="tag rec">Recommended</span></div><h3>Menya Kanetora</h3><p>도착일 저녁. 빠르게 먹고 밤 일정으로 넘어가기 좋은 라멘.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Menya+Kanetora+Tenjin+Fukuoka">MAP ↗</a></div></div>
 <div class="move">Walk / Haruyoshi</div>
 <div class="stop"><div class="time">AROUND 20:00</div><div class="card"><div class="meta"><span class="tag">Record</span><span class="tag">Drink</span><span class="tag must">Must</span></div><h3>Record Shop BAGISM</h3><p>레코드와 술을 함께 보는 첫날 메인 스폿.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Record+Shop+BAGISM+Fukuoka">MAP ↗</a></div></div>
-<div class="choiceBlock"><div class="choiceTitle">21:15 · Choose One</div><div class="options"><div class="option"><div class="optionLabel">Option A · Craft Beer</div><h4>BEERKICHI</h4><p>첫날 맥주 중심으로 가볍게 마무리.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=BEERKICHI+Fukuoka">MAP ↗</a></div><div class="option recommended"><div class="optionLabel">Option B · Recommended</div><h4>STAND BAR WILL's</h4><p>레코드숍 뒤 분위기를 바꾸기 좋음.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=STAND+BAR+WILL%27s+Fukuoka">MAP ↗</a></div></div></div>
+<div class="choiceBlock"><div class="choiceTitle">21:15 · Choose One</div><div class="options"><div class="option"><div class="optionLabel">Option A · Craft Beer</div><h4>BEERKICHI</h4><p>첫날 맥주 중심으로 가볍게 마무리.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/%EB%B9%84%EC%96%B4%ED%82%A4%EC%B9%98/@33.5891399,130.3992346,15.54z/data=!4m6!3m5!1s0x35419134b4061e89:0xd909713185aa3d01!8m2!3d33.5867579!4d130.4033875!16s%2Fg%2F11h14kdz5_">MAP ↗</a></div><div class="option recommended"><div class="optionLabel">Option B · Recommended</div><h4>STAND BAR WILL's</h4><p>레코드숍 뒤 분위기를 바꾸기 좋음.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/STAND+BAR+WILL's/@33.5874593,130.4010282,17z/data=!4m6!3m5!1s0x3541912ec3e46275:0xe17cb0dbab8e5ceb!8m2!3d33.5874878!4d130.4035549!16s%2Fg%2F11s47f1577">MAP ↗</a></div></div></div>
 <div class="stop last"><div class="time">LATE</div><div class="card"><div class="meta"><span class="tag">Return</span></div><h3>Back to HOTEL M</h3><p>첫날은 여기서 종료. 다음 날 메인 일정에 체력을 남긴다.</p></div></div>
 </div></section>
 
-<section class="day" data-day="18"><div class="dayHeader"><div class="dayKicker">Sep 18 · Fri <span class="todayMark">TODAY</span></div><h2 class="dayTitle">RECORDS / KEGO / YAKUIN</h2><p class="dayDesc">이번 여행의 음악·레코드 중심 날. 낮에는 레코드, 밤에는 작은 바와 음악 공간.</p><div class="routeChip">DAIMYO → AKASAKA → YAKUIN → IMAIZUMI → KEGO</div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=TresoL+Fukuoka&waypoints=Groovin%27+Fukuoka%7CLUCY%27S+RECORD+CAFE%7CKurobuta+Katsuretsu+Taishotei%7CSo+Tough+Records%7Cil+macaroni%7CLIVING+STEREO+MUSIC+BAR+%26+RECORD+STORE%7COllie+Fukuoka">OPEN DAY ROUTE ↗</a></div>
+<section class="day" id="day-18" data-day="18"><div class="dayHeader"><div class="dayKicker">Sep 18 · Fri <span class="todayMark">TODAY</span></div><h2 class="dayTitle">RECORDS / KEGO / YAKUIN</h2><p class="dayDesc">이번 여행의 음악·레코드 중심 날. 낮에는 레코드, 밤에는 작은 바와 음악 공간.</p><div class="routeChip">DAIMYO → AKASAKA → YAKUIN → IMAIZUMI → KEGO</div>
+<div class="visualBlock"><div class="miniMap">
+<svg class="routeMap" viewBox="0 0 620 210" role="img" aria-label="18일 루트 미니맵">
+<path class="route18" d="M65 105 C150 70 220 62 290 82 C360 104 420 132 490 150"/>
+<circle class="mapDot18" cx="65" cy="105" r="8"/><text class="mapLabel" x="65" y="80" text-anchor="middle">GROOVIN'</text>
+<circle class="mapDot18" cx="175" cy="72" r="8"/><text class="mapLabel" x="175" y="48" text-anchor="middle">LUCY'S</text>
+<circle class="mapDot18" cx="285" cy="82" r="8"/><text class="mapLabel" x="285" y="56" text-anchor="middle">TAISHOTEI</text>
+<circle class="mapDot18" cx="375" cy="116" r="8"/><text class="mapLabel" x="375" y="92" text-anchor="middle">SO TOUGH</text>
+<circle class="mapDot18" cx="490" cy="150" r="8"/><text class="mapLabel" x="490" y="126" text-anchor="middle">LIVING STEREO</text>
+<path class="route18 routeDash" d="M490 150 L555 112"/><path class="route18 routeDash" d="M490 150 L555 170"/>
+<text class="mapSub" x="558" y="101" text-anchor="middle">HOBO / OLLIE</text><text class="mapSub" x="558" y="190" text-anchor="middle">TRESOL / JAZZ</text>
+</svg></div>
+<div class="whyBox"><strong>효율 포인트</strong> · 다이묘/아카사카의 낮 일정에서 야쿠인·케고의 밤 일정으로 한 방향 이동. 같은 서쪽 생활권을 반복 왕복하지 않는다.</div></div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=TresoL+Fukuoka&waypoints=Groovin%27+Fukuoka%7CLUCY%27S+RECORD+CAFE%7CKurobuta+Katsuretsu+Taishotei%7CSo+Tough+Records%7Cil+macaroni%7CLIVING+STEREO+MUSIC+BAR+%26+RECORD+STORE%7COllie+Fukuoka">OPEN DAY ROUTE ↗</a></div>
 <div class="timeline">
 <div class="stop"><div class="time">10:00</div><div class="card"><div class="meta"><span class="tag">Record</span></div><h3>Groovin' Fukuoka</h3><p>오전 레코드 투어 시작점.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Groovin%27+Fukuoka">MAP ↗</a></div></div>
 <div class="move">Walk</div>
@@ -38,25 +149,47 @@
 <div class="choiceBlock"><div class="choiceTitle">13:30 · Record Loop · Pick 1–2</div><div class="options"><div class="option recommended"><div class="optionLabel">Option A · Recommended</div><h4>So Tough Records</h4><p>낮 레코드 루프에서 가장 우선.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=So+Tough+Records+Fukuoka">MAP ↗</a></div><div class="option"><div class="optionLabel">Option B</div><h4>KEYAKI / Mandarake</h4><p>레코드를 더 볼지, 서브컬처 쇼핑으로 바꿀지 선택.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Taguchi+Shoten+KEYAKI+Fukuoka">KEYAKI ↗</a><div style="height:8px"></div><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mandarake+Fukuoka">MANDARAKE ↗</a></div></div></div>
 <div class="stop"><div class="time">AROUND 18:00</div><div class="card"><div class="meta"><span class="tag">Dinner</span></div><h3>il macaroni</h3><p>이마이즈미에서 저녁 후 그대로 밤 동선으로 연결.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=il+macaroni+Fukuoka">MAP ↗</a></div></div>
 <div class="move">Walk</div>
-<div class="stop"><div class="time">AROUND 19:30</div><div class="card"><div class="meta"><span class="tag">Music</span><span class="tag">Record Bar</span><span class="tag must">Must</span></div><h3>LIVING STEREO</h3><p>이번 여행의 음악/레코드 테마와 가장 직접적으로 맞는 메인 스폿.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=LIVING+STEREO+MUSIC+BAR+%26+RECORD+STORE+Fukuoka">MAP ↗</a></div></div>
-<div class="choiceBlock"><div class="choiceTitle">21:00 · Choose One</div><div class="options"><div class="option"><div class="optionLabel">Option A · Beer</div><h4>Hobo Beer Store</h4><p>맥주 중심으로 차분하게 이어가기.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hobo+Beer+Store+Fukuoka">MAP ↗</a></div><div class="option recommended"><div class="optionLabel">Option B · Recommended</div><h4>Ollie</h4><p>Living Stereo 뒤 공간 성격을 바꾸기 좋은 스탠드 바.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ollie+Fukuoka+Stand+Bar">MAP ↗</a></div></div></div>
-<div class="choiceBlock"><div class="choiceTitle">23:00 · Late Night · Choose One</div><div class="options"><div class="option recommended"><div class="optionLabel">Option A · Recommended</div><h4>TresoL</h4><p>밤을 길게 가져가고 싶을 때.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=TresoL+Fukuoka">MAP ↗</a></div><div class="option"><div class="optionLabel">Option B · Jazz</div><h4>Jazz & Cafe Backstage</h4><p>클럽/바 대신 라이브 재즈를 선택.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jazz+Cafe+Backstage+Fukuoka">MAP ↗</a></div></div></div>
+<div class="stop"><div class="time">AROUND 19:30</div><div class="card"><div class="meta"><span class="tag">Music</span><span class="tag">Record Bar</span><span class="tag must">Must</span></div><h3>LIVING STEREO</h3><p>이번 여행의 음악/레코드 테마와 가장 직접적으로 맞는 메인 스폿.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/LIVING+STEREO+MUSIC+BAR+%26+RECORD+STORE/@33.5775963,130.3986155,15.54z/data=!4m6!3m5!1s0x3541919092a47047:0x68d94c62dd01dc82!8m2!3d33.5823831!4d130.392588!16s%2Fg%2F11dxh_x0wz">MAP ↗</a></div></div>
+<div class="choiceBlock"><div class="choiceTitle">21:00 · Choose One</div><div class="options"><div class="option"><div class="optionLabel">Option A · Beer</div><h4>Hobo Beer Store</h4><p>맥주 중심으로 차분하게 이어가기.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Hobo+Beer+Store/@33.5853181,130.3950984,17.04z/data=!4m6!3m5!1s0x35419127add0a135:0x986bc388c2f1c8a4!8m2!3d33.5839157!4d130.3907319!16s%2Fg%2F11kpl7wk63">MAP ↗</a></div><div class="option recommended"><div class="optionLabel">Option B · Recommended</div><h4>Ollie</h4><p>Living Stereo 뒤 공간 성격을 바꾸기 좋은 스탠드 바.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Ollie/@33.5837682,130.3904582,17z/data=!4m6!3m5!1s0x354193e1e632b183:0x2b46e8950ba3293b!8m2!3d33.5837682!4d130.3904582!16s%2Fg%2F11yf5sfm_2">MAP ↗</a></div></div></div>
+<div class="choiceBlock"><div class="choiceTitle">23:00 · Late Night · Choose One</div><div class="options"><div class="option recommended"><div class="optionLabel">Option A · Recommended</div><h4>TresoL</h4><p>밤을 길게 가져가고 싶을 때.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/TresoL/@33.5793156,130.3983796,15.54z/data=!4m6!3m5!1s0x35419180c29d382f:0x42cbd78996d72921!8m2!3d33.585035!4d130.39229!16s%2Fg%2F12qgqm081">MAP ↗</a></div><div class="option"><div class="optionLabel">Option B · Jazz</div><h4>Jazz & Cafe Backstage</h4><p>클럽/바 대신 라이브 재즈를 선택.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jazz+Cafe+Backstage+Fukuoka">MAP ↗</a></div></div></div>
 <div class="stop last"><div class="time">LATE</div><div class="card"><div class="meta"><span class="tag">Return</span></div><h3>Back to HOTEL M</h3><p>늦어지면 택시 복귀 권장.</p></div></div>
 </div></section>
 
-<section class="day" data-day="19"><div class="dayHeader"><div class="dayKicker">Sep 19 · Sat <span class="todayMark">TODAY</span></div><h2 class="dayTitle">CRAFT BEER / SATURDAY NIGHT</h2><p class="dayDesc">전날과 성격을 바꿔 맥주 + 토요일 음악 중심. 오전은 일부러 느슨하게.</p><div class="routeChip">LATE START → DAIMYO → TAKASAGO → MAIZURU / REFLEX</div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=Kieth+Flack+Fukuoka&waypoints=FUKUOKA+CRAFT+by+El+Borracho%7CBEERSONIC+Fukuoka%7CBEER+PADDY+FUKUOKA">OPEN DAY ROUTE ↗</a></div>
+<section class="day" id="day-19" data-day="19"><div class="dayHeader"><div class="dayKicker">Sep 19 · Sat <span class="todayMark">TODAY</span></div><h2 class="dayTitle">CRAFT BEER / SATURDAY NIGHT</h2><p class="dayDesc">전날과 성격을 바꿔 맥주 + 토요일 음악 중심. 오전은 일부러 느슨하게.</p><div class="routeChip">LATE START → DAIMYO → TAKASAGO → MAIZURU / REFLEX</div>
+<div class="visualBlock"><div class="miniMap">
+<svg class="routeMap" viewBox="0 0 620 210" role="img" aria-label="19일 루트 미니맵">
+<path class="route19" d="M70 105 L190 105 L310 105"/>
+<circle class="mapDot19" cx="70" cy="105" r="8"/><text class="mapLabel" x="70" y="78" text-anchor="middle">FUKUOKA CRAFT</text>
+<circle class="mapDot19" cx="190" cy="105" r="8"/><text class="mapLabel" x="190" y="78" text-anchor="middle">BEERSONIC</text>
+<circle class="mapDot19" cx="310" cy="105" r="8"/><text class="mapLabel" x="310" y="78" text-anchor="middle">BEER PADDY</text>
+<path class="route19 routeDash" d="M310 105 C390 80 445 65 535 60"/><path class="route19 routeDash" d="M310 105 C390 130 450 155 535 162"/>
+<circle class="mapDot19" cx="535" cy="60" r="8"/><text class="mapLabel" x="535" y="38" text-anchor="middle">REFLEX</text><text class="mapSub" x="535" y="80" text-anchor="middle">easy / talk</text>
+<circle class="mapDot19" cx="535" cy="162" r="8"/><text class="mapLabel" x="535" y="142" text-anchor="middle">KIETH FLACK</text><text class="mapSub" x="535" y="184" text-anchor="middle">taxi / club</text>
+</svg></div>
+<div class="whyBox"><strong>효율 포인트</strong> · BEERSONIC과 Beer Paddy를 다카사고에서 연속 처리. 그 뒤에만 ‘가까운 Reflex’와 ‘택시로 Maizuru’ 중 밤의 성격을 선택한다.</div></div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=Kieth+Flack+Fukuoka&waypoints=FUKUOKA+CRAFT+by+El+Borracho%7CBEERSONIC+Fukuoka%7CBEER+PADDY+FUKUOKA">OPEN DAY ROUTE ↗</a></div>
 <div class="timeline">
 <div class="stop"><div class="time">MORNING</div><div class="card"><div class="meta"><span class="tag">Slow Start</span></div><h3>Sleep In / Free Morning</h3><p>금요일 밤이 길기 때문에 오전 일정은 비워두는 안을 기본값으로.</p></div></div>
 <div class="choiceBlock"><div class="choiceTitle">Lunch · Choose One</div><div class="options"><div class="option recommended"><div class="optionLabel">Option A · Recommended</div><h4>FUKUOKA CRAFT</h4><p>토요일 전체를 맥주 테마로 자연스럽게 연결.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=FUKUOKA+CRAFT+by+El+Borracho">MAP ↗</a></div><div class="option"><div class="optionLabel">Option B · Proper Meal</div><h4>Authentic Living Butcher NYC</h4><p>좀 더 제대로 된 식사를 우선할 때.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Authentic+Living+Butcher+NYC+Fukuoka">MAP ↗</a></div></div></div>
 <div class="stop"><div class="time">AFTERNOON</div><div class="card"><div class="meta"><span class="tag">Free</span><span class="tag">Shopping</span></div><h3>Daimyo / Tenjin Free Time</h3><p>전날 못 본 레코드숍이나 Mandarake가 있으면 이 구간에서 회수.</p></div></div>
-<div class="stop"><div class="time">18:00</div><div class="card"><div class="meta"><span class="tag">Craft Beer</span><span class="tag must">Time-Locked</span></div><h3>BEERSONIC</h3><p>이 날 가장 시간 제약이 큰 장소로 보고 먼저 고정.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=BEERSONIC+Fukuoka">MAP ↗</a></div></div>
+<div class="stop"><div class="time">18:00</div><div class="card"><div class="meta"><span class="tag">Craft Beer</span><span class="tag must">Time-Locked</span></div><h3>BEERSONIC</h3><p>이 날 가장 시간 제약이 큰 장소로 보고 먼저 고정.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/BEERSONIC/@33.5891399,130.3992346,15.54z/data=!4m6!3m5!1s0x3541919eb17ab06f:0x5f21055b9cc1a13f!8m2!3d33.5802296!4d130.4065734!16s%2Fg%2F11hcz1k0vf">MAP ↗</a></div></div>
 <div class="move">Short walk</div>
-<div class="stop"><div class="time">18:45</div><div class="card"><div class="meta"><span class="tag">Beer</span><span class="tag">Food</span></div><h3>BEER PADDY FUKUOKA</h3><p>BEERSONIC과 같은 다카사고 권역이라 세트로 묶기 좋음.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=BEER+PADDY+FUKUOKA">MAP ↗</a></div></div>
-<div class="choiceBlock"><div class="choiceTitle">20:30 · Saturday Night · Choose One</div><div class="options"><div class="option"><div class="optionLabel">Option A · Easy / Talk</div><h4>80's MUSIC BAR reflex</h4><p>동선 효율 최우선. 레트로 음악을 들으며 편하게 술.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=80%27s+MUSIC+BAR+reflex+Fukuoka">MAP ↗</a></div><div class="option recommended"><div class="optionLabel">Option B · Recommended</div><h4>Kieth Flack</h4><p>토요일 밤을 음악/클럽 경험으로 확실히 가져갈 때. 이동은 택시 권장.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kieth+Flack+Fukuoka">MAP ↗</a></div></div></div>
+<div class="stop"><div class="time">18:45</div><div class="card"><div class="meta"><span class="tag">Beer</span><span class="tag">Food</span></div><h3>BEER PADDY FUKUOKA</h3><p>BEERSONIC과 같은 다카사고 권역이라 세트로 묶기 좋음.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/%EB%B9%84%EC%96%B4+%ED%8C%A8%EB%94%94+%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4+%E3%83%93%E3%82%A2%E3%83%91%E3%83%87%E3%82%A3%E3%83%95%E3%82%AF%E3%82%AA%E3%82%AB/@33.5891399,130.3992346,15.54z/data=!4m5!3m4!1s0x3541919bfcf268ef:0x18f16ff41dfc9814!8m2!3d33.5815007!4d130.4055583">MAP ↗</a></div></div>
+<div class="choiceBlock"><div class="choiceTitle">20:30 · Saturday Night · Choose One</div><div class="options"><div class="option"><div class="optionLabel">Option A · Easy / Talk</div><h4>80's MUSIC BAR reflex</h4><p>동선 효율 최우선. 레트로 음악을 들으며 편하게 술.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=80%27s+MUSIC+BAR+reflex+Fukuoka">MAP ↗</a></div><div class="option recommended"><div class="optionLabel">Option B · Recommended</div><h4>Kieth Flack</h4><p>토요일 밤을 음악/클럽 경험으로 확실히 가져갈 때. 이동은 택시 권장.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Kieth+Flack/@33.5891399,130.3992346,15.54z/data=!4m6!3m5!1s0x3541910712f0573b:0x9ff8d38819f7d59a!8m2!3d33.5928942!4d130.394398!16s%2Fg%2F11t7vgmxl9">MAP ↗</a></div></div></div>
 <div class="stop last"><div class="time">LATE</div><div class="card"><div class="meta"><span class="tag">Taxi</span></div><h3>Back to HOTEL M</h3><p>토요일 밤 종료 후 택시 복귀.</p></div></div>
 </div></section>
 
-<section class="day" data-day="20"><div class="dayHeader"><div class="dayKicker">Sep 20 · Sun <span class="todayMark">TODAY</span></div><h2 class="dayTitle">COFFEE / LAST WALK</h2><p class="dayDesc">귀국일. 먼 지역으로 가지 않고 텐진·다이묘에서 못 간 곳만 회수.</p><div class="routeChip">COFFEE → TENJIN / DAIMYO → HOTEL M → AIRPORT</div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=Fukuoka+Airport&waypoints=manu+coffee+Fukuoka%7CTenjin+Fukuoka">OPEN DAY ROUTE ↗</a></div>
+<section class="day" id="day-20" data-day="20"><div class="dayHeader"><div class="dayKicker">Sep 20 · Sun <span class="todayMark">TODAY</span></div><h2 class="dayTitle">COFFEE / LAST WALK</h2><p class="dayDesc">귀국일. 먼 지역으로 가지 않고 텐진·다이묘에서 못 간 곳만 회수.</p><div class="routeChip">COFFEE → TENJIN / DAIMYO → HOTEL M → AIRPORT</div>
+<div class="visualBlock"><div class="miniMap">
+<svg class="routeMap" viewBox="0 0 620 175" role="img" aria-label="20일 루트 미니맵">
+<path class="route20" d="M65 86 L190 86 L320 86 L450 86 L565 86"/>
+<circle class="mapDot20" cx="65" cy="86" r="8"/><text class="mapLabel" x="65" y="60" text-anchor="middle">MANU</text>
+<circle class="mapDot20" cx="190" cy="86" r="8"/><text class="mapLabel" x="190" y="60" text-anchor="middle">TENJIN</text>
+<circle class="mapDot20" cx="320" cy="86" r="8"/><text class="mapLabel" x="320" y="60" text-anchor="middle">RECOVERY</text>
+<circle class="mapHotel" cx="450" cy="86" r="10"/><text class="mapLabel" x="450" y="60" text-anchor="middle">HOTEL M</text>
+<circle class="mapDot20" cx="565" cy="86" r="8"/><text class="mapLabel" x="565" y="60" text-anchor="middle">AIRPORT</text>
+<text class="mapSub" x="315" y="132" text-anchor="middle">last walk → luggage → one-way airport exit</text>
+</svg></div>
+<div class="whyBox"><strong>효율 포인트</strong> · 새 권역을 추가하지 않고 못 간 곳만 회수한 뒤 숙소에서 짐을 찾고 공항으로 빠지는 단방향 구조.</div></div><a class="btn primary dayRoute" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=HOTEL+M+Fukuoka&destination=Fukuoka+Airport&waypoints=manu+coffee+Fukuoka%7CTenjin+Fukuoka">OPEN DAY ROUTE ↗</a></div>
 <div class="timeline">
 <div class="stop"><div class="time">AROUND 09:30</div><div class="card"><div class="meta"><span class="tag">Coffee</span><span class="tag rec">Recommended</span></div><h3>manu coffee</h3><p>귀국일 아침 시작점. 전날까지 카페 비중이 낮아 마지막 날에 잘 맞음.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=manu+coffee+Fukuoka">MAP ↗</a></div></div>
 <div class="move">Walk / Tenjin–Daimyo</div>
@@ -67,13 +200,48 @@
 <div class="stop last"><div class="time">AROUND 17:00—17:30</div><div class="card"><div class="meta"><span class="tag must">Flight Day</span></div><h3>Fukuoka Airport</h3><p>20:40 귀국편 기준. 여유 있게 공항으로 이동.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fukuoka+Airport+International+Terminal">MAP ↗</a></div></div>
 </div></section>
 </main>
-<footer class="footer"><strong>FUKUOKA TRIP GUIDE v1.0</strong><br>모바일 우선 · 날짜별 동선 · 대체 옵션 · Google Maps 연결.<br>현장 영업시간, 휴무, 이벤트는 변동될 수 있으므로 방문 직전 지도에서 최종 확인.</footer>
+<footer class="footer"><strong>FUKUOKA TRIP GUIDE v1.1</strong><br>모바일 우선 · 전체/날짜별 루트 시각화 · JS 없는 뷰어 fallback · 대체 옵션 · Google Maps 연결.<br>현장 영업시간, 휴무, 이벤트는 변동될 수 있으므로 방문 직전 지도에서 최종 확인.</footer>
 </div>
 <script>
 const days=[17,18,19,20];
-function setDay(day){document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.dataset.day===String(day)));document.querySelectorAll('.day').forEach(el=>el.classList.toggle('active',el.dataset.day===String(day)));window.scrollTo({top:0,behavior:'smooth'});try{localStorage.setItem('fukuokaActiveDay',day)}catch(e){}}
-function getToday(){const n=new Date();if(n.getFullYear()===2026&&n.getMonth()===8&&days.includes(n.getDate())){const s=document.querySelector('.day[data-day="'+n.getDate()+'"]');if(s)s.classList.add('today');return n.getDate()}return null}
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setDay(Number(b.dataset.day))));let saved=null;try{saved=Number(localStorage.getItem('fukuokaActiveDay'))}catch(e){}setDay(getToday()||(days.includes(saved)?saved:17));
+
+function setDay(day,{scroll=false,updateHash=false}={}){
+  document.querySelectorAll('.tab').forEach(el=>{
+    const on=el.dataset.day===String(day);
+    el.classList.toggle('active',on);
+    el.setAttribute('aria-current',on?'page':'false');
+  });
+  document.querySelectorAll('.day').forEach(el=>el.classList.toggle('active',el.dataset.day===String(day)));
+  if(updateHash) history.replaceState(null,'','#day-'+day);
+  try{localStorage.setItem('fukuokaActiveDay',String(day))}catch(e){}
+  if(scroll){
+    const target=document.getElementById('day-'+day);
+    if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+}
+
+function getToday(){
+  const n=new Date();
+  if(n.getFullYear()===2026&&n.getMonth()===8&&days.includes(n.getDate())){
+    const s=document.querySelector('.day[data-day="'+n.getDate()+'"]');
+    if(s)s.classList.add('today');
+    return n.getDate();
+  }
+  return null;
+}
+
+document.querySelectorAll('.tab').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    setDay(Number(a.dataset.day),{scroll:true,updateHash:true});
+  });
+});
+
+let saved=null;
+try{saved=Number(localStorage.getItem('fukuokaActiveDay'))}catch(e){}
+const hashMatch=location.hash.match(/^#day-(17|18|19|20)$/);
+const hashDay=hashMatch?Number(hashMatch[1]):null;
+setDay(hashDay||getToday()||(days.includes(saved)?saved:17));
 </script>
 </body>
 </html>
